@@ -45,7 +45,8 @@ class BasicCounter extends StatelessWidget {
         },child: Icon(Icons.add)),
         body: Center(
             child: ValueListenableBuilder(
-              valueListenable: _num, builder: (BuildContext context, value, Widget? child) {
+              valueListenable: _num,
+              builder: (BuildContext context, value, Widget? child) {
                 return Text(_num.value.toString(),style: TextStyle(fontSize: 30));
             },
 
